@@ -1,0 +1,11 @@
+{
+  "name": "graphQl-BE",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:juo1221/graphQl-BE.git",
+  "author": "juo <hwgiwh271@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "graphql-yoga": "^1.18.3"
+  }
+}
