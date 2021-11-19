@@ -5,7 +5,7 @@ const LIST_MOVIES_URL = `${BASE_URL}list_movies.json`;
 const MOVIE_DETALIS_URL = `${BASE_URL}movie_details.json`;
 const MOVIES_SUGGESTIONS_URL = `${BASE_URL}movie_suggestions.json`;
 
-export const getMovies = async (limit, rating) => {
+export const getMovies = async (limit, rating, query_term, genre) => {
   const {
     data: {
       data: { movies },
@@ -14,6 +14,8 @@ export const getMovies = async (limit, rating) => {
     params: {
       limit,
       minimum_rating: rating,
+      query_term,
+      genre,
     },
   });
   return movies;

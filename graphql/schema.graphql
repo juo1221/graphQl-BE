@@ -7,7 +7,7 @@ type Movie {
   medium_cover_image: String!
 }
 type Query {
-  movies(limit: Int, rating: Float): [Movie]!
+  movies(limit: Int, rating: Float, query_term: String, genre: String): [Movie]!
   movie(id: Int): Movie!
   suggestions(id: Int): [Movie]!
 }
